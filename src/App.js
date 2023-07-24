@@ -69,14 +69,14 @@ return (
 async function fetchData() {
     
   const totalCards = cardsNumber + 1;
-  console.log("oi")
+  
   await fetch(`https://apitarot-agpucinelli.vercel.app/api`, {
   method: "GET",  
     
   }).then((response) => response.json())
     .then((data) => { 
 
-    console.log(data)
+    
        //sortreia as cartas
        function selectDistinctItems(data, n) {
         if (n > data.length) {
@@ -113,7 +113,7 @@ async function fetchData() {
         //Inserindo imagens na div
     selectedItems.map((dataItems) => {
     try {      
-      console.log(dataItems)
+      
       const ResultsLopp = document.getElementById('container')        
       const cardImg = String(dataItems.img);
       const convertedContent = convertExib(cardImg);

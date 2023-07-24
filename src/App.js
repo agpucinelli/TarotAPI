@@ -102,7 +102,7 @@ async function fetchData() {
       // Selecionar 1 itens distintos aleatoriamente
       const selectedItems = selectDistinctItems(data, 1);
       
-      console.log(selectedItems);
+      
 
 
        //
